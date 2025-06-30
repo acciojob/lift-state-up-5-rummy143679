@@ -9,12 +9,12 @@ function Child(props) {
     return (
         <div>
             {props.isLoggedIn ? <p>You are logged in!</p> :
-                <form name='login-form'>
+                <form name='login-form' className='login-form'>
                     <label htmlFor='name'>Username:</label>
-                    <input type="text" name='name' />
+                    <input type="text" name='name' style={{ marginBottom: '10px' }} />
                     <br />
                     <label htmlFor='password'>Password:</label>
-                    <input type="password" name='password' />
+                    <input type="password" name='password' style={{ marginBottom: '10px' }} />
                     <br />
                     <button type="submit" onClick={handleSubmit}>Login</button>
                 </form>
